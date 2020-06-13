@@ -21,6 +21,12 @@
         <context>bitbucket-dark-mode</context>
     </web-resource>
 
+    <client-resource key="darkmode-template-soy" name="Darkmode Template Soy">
+        <directory location="/templates/">
+            <include>/**/*.soy</include>
+        </directory>
+    </client-resource>
+
     <!-- profile - управление включением/выключение темного режима  -->
     <web-item key="profile-plugin-tab" name="Profile navigation tab" section="bitbucket.user.profile.secondary.tabs" weight="20">
         <label>Dark mode</label>
@@ -32,14 +38,30 @@
         <description key="profile-servlet.description">Dark mode profile</description>
         <url-pattern>/dark-mode/profile</url-pattern>
     </servlet>
+
+    <web-resource key="dark-mode-profile-static" name="dark-mode-profile Web Resources">
+        <dependency>com.atlassian.auiplugin:aui-toggle</dependency>
+        <resource type="download" name="bitbucket-dark-mode-profile.css" location="/css/bitbucket-dark-mode-profile.css"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>dark-mode-profile-static</context>
+    </web-resource>
     <!-- end profile - управление включением/выключение темного режима  -->
+
 
     <web-resource key="dark-mode-css" name="dark mode for bitbucket">
         <resource type="download" name="bitbucket-dark-mode.css" location="/css/bitbucket-dark-mode.css"/>
-        <resource type="download" name="bitbucket-dark-mode.js" location="/js/bitbucket-dark-mode.js"/>
         <resource type="download" name="images/" location="/images"/>
 
         <context>atl.general</context>
+    </web-resource>
+
+    <web-resource key="dark-mode-banner-css" name="dark mode promo banner for bitbucket">
+        <resource type="download" name="bitbucket-dark-mode.css" location="/css/bitbucket-dark-mode.css"/>
+        <resource type="download" name="bitbucket-dark-mode.js" location="/js/bitbucket-dark-mode-banner.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>bitbucket.page.dashboard</context>
     </web-resource>
     
 </atlassian-plugin>

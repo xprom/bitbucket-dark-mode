@@ -2,14 +2,18 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:atlassian-scanner="http://www.atlassian.com/schema/atlassian-scanner"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
         http://www.atlassian.com/schema/atlassian-scanner
         http://www.atlassian.com/schema/atlassian-scanner/atlassian-scanner.xsd">
     <atlassian-scanner:scan-indexes/>
 
-    <bean id="darkModeProfilePage" name="darkModeProfilePage" class="vshevchenko.impl.servlet.profile.WatchersProfileServlet">
-        <constructor-arg index="1" ref="soyTemplateRenderer"/>
-        <constructor-arg index="1" ref="pluginSettingsFactory"/>
+    <osgi:reference id="soyTemplateRenderer" interface="com.atlassian.soy.renderer.SoyTemplateRenderer"/>
+
+    <bean id="darkModeProfilePage" name="darkModeProfilePage" class="vshevchenko.impl.servlet.Profile">
+        <constructor-arg index="0" ref="soyTemplateRenderer"/>
+        <constructor-arg index="1" ref="authenticationContext"/>
+        <constructor-arg index="2" ref="pluginSettingsFactory"/>
     </bean>
 </beans>

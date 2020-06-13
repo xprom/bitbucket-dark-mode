@@ -12,16 +12,49 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.bitbucket.server:bitbucket-api:unknown" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.bitbucket.server:bitbucket-spi:unknown" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.soy:soy-template-renderer-api:4.5.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.bitbucket.server:bitbucket-api:5.16.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.analytics:analytics-api:5.4.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.annotations:atlassian-annotations:2.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.crowd:embedded-crowd-api:2.12.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.event:atlassian-event:3.1.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.extras:atlassian-extras-api:3.3.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.utils:atlassian-processutils:1.8.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jvnet.winp:winp:1.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.findbugs:jsr305:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:hibernate-validator:5.4.1.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.logging:jboss-logging:3.3.1.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml:classmate:1.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.bitbucket.server:bitbucket-spi:5.16.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-core:4.5.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-api:4.5.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.util.concurrent:atlassian-util-concurrent:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.fugue:fugue:2.6.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.profiling:atlassian-profiling:2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugin:atlassian-spring-scanner-annotation:2.1.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.sal:sal-api:unknown" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.gson:gson:unknown" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.sal:sal-api:3.2.0-abbce37" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.inject:javax.inject:1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:unknown" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.ws.rs:jsr311-api:1.1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.commons:commons-lang3:unknown" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.commons:commons-lang3:3.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.atlassian.plugins:atlassian-plugins-osgi-testrunner:2.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:unknown" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.wink:wink-client:1.1.3-incubating" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.wink:wink-common:1.1.3-incubating" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.geronimo.specs:geronimo-annotation_1.1_spec:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.xml.bind:jaxb-api:2.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.activation:activation:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.atlassian.upm:upm-api:2.15" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
 </module>

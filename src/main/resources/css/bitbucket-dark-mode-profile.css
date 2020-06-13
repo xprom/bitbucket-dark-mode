@@ -1,0 +1,22 @@
+.dark-mode-theme {
+    width: 250px;
+    border: solid 1px black;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0px 0px 21px 1px rgba(0,0,0,0.69);
+    -moz-box-shadow: inset 0px 0px 21px 1px rgba(0,0,0,0.69);
+    box-shadow: inset 0px 0px 21px 1px rgba(0,0,0,0.69);
+    overflow: hidden;
+
+}
+    .dark-mode-theme .dark-mode-promo {
+        width: 250px;
+        height: 350px;
+        background-position: -205px -97px;
+        background-image: url('images/promo.png');
+    }
+    .dark-mode-theme .dark-mode-toggle {
+        height: 45px;
+        margin-top: -45px;
+        text-align: center;
+        font-weight: bold;
+    }
