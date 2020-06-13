@@ -1,0 +1,408 @@
+html, body, #page, #footer, .aui-navgroup~.aui-page-panel .aui-page-panel-nav, .aui-page-header~.aui-page-panel .aui-page-panel-nav, .aui-sidebar~.aui-page-panel .aui-page-panel-nav,
+.aui-sidebar .aui-sidebar-wrapper, .filterable-entity-table .paged-table-filter,
+ .repository-list-container .search-results-container .search-results-item a {
+    color: #dedede;
+    background: #181A1B;
+}
+.repository-list-container .search-results-container .search-results-item a:focus, .repository-list-container .search-results-container .search-results-item a:hover {
+    background: #1C1C21 !important;
+    color: white;
+}
+.aui-page-header {
+    color: #dedede !important;
+    background-color: #181A1B !important;
+}
+.bitbucket-theme:not(.aui-page-focused) #content > header {
+    background: #181A1B;
+}
+.aui-header, .welcome-mat {
+    background-color: #1C1C21;
+}
+.pull-request-list .filter-bar ul {
+    background-color: #1C1C21;
+}
+table.aui>tbody>tr, table.aui>tfoot>tr {
+    background-color: #1C1C21;
+}
+.bitbucket-theme #content table.aui > tbody > tr:hover, .bitbucket-theme .aui-dialog2 table.aui > tbody > tr:hover {
+    background-color: #181A1B;
+}
+.adg2-react-select.Select .Select-control .Select-value .Select-value-label, .adg2-react-select.Select.has-value > .Select-control .Select-value .Select-value-label, .adg2-react-select.Select.has-value.is-pseudo-focused > .Select-control .Select-value .Select-value-label {
+    color: white;
+}
+.welcome-mat {
+    border-color: #1C1C21;
+}
+.aui-navgroup-horizontal .aui-nav>.aui-nav-selected a, .aui-navgroup-horizontal .aui-nav>.aui-nav-selected a.active, .aui-navgroup-horizontal .aui-nav>.aui-nav-selected a:link, .aui-navgroup-horizontal .aui-nav>.aui-nav-selected a:visited, .entity-item > h1 ~ .user-detail,
+.aui-nav-vertical>li>a, .aui-navgroup-vertical .aui-nav>li>a, .aui-sidebar[aria-expanded='true'] button.aui-nav-item.aui-button,
+.filebrowser-table .directory-file-history.message a, .filebrowser-table td.timestamp,
+.bitbucket-theme #browse-table thead th {
+    color: #dedede;
+}
+.labels-title {
+    color: #dedede !important;
+}
+.aui-label {
+    background-color: #181A1B !important;
+    color: white !important;
+}
+.aui-nav-vertical .aui-nav .aui-nav-selected>a, .aui-navgroup-vertical .aui-nav .aui-nav-selected>a, .aui-sidebar-submenu .aui-navgroup-vertical .aui-nav .aui-nav-selected>.aui-nav-item, .aui-sidebar .aui-navgroup-vertical .aui-nav .aui-nav-selected>.aui-nav-item {
+    color: white;
+    font-weight: bold;
+}
+.aui-page-panel-nav {
+    border-right: 1px solid #1C1C21;
+}
+.aui-sidebar[aria-expanded=false] .aui-sidebar-group-tier-one~.aui-sidebar-group-tier-one, .aui-sidebar .aui-sidebar-footer {
+    border-top: 1px solid #1C1C21;
+}
+#content .aui-group.account-settings .aui-item.avatar-item {
+    border-left: 1px solid #1C1C21;
+}
+.aui-navgroup-horizontal .aui-nav>.aui-nav-selected a:after {
+    background: white;
+}
+form.aui .text, form.aui .password, form.aui .textarea, form.aui .select, form.aui .multi-select, form.aui .aui-select2-container .select2-choices {
+    background: #dedede;
+}
+.aui-page-panel {
+    background-color: #181A1B;
+}
+h1, h2, h3, h4, h5, h6, .welcome-mat h3, .welcome-mat p, a, .repository-breadcrumbs li > a, .branch-lozenge .branch-lozenge-content {
+    color: #dedede;
+}
+h1, h2, h3, h4, h5, h6, .repository-list-container h4.title, .commit-badge-oneline span.commit-author, .commit-badge-oneline time, form.aui .checkbox>label, form.aui .radio>label, .aui-dialog2-header-main {
+    color: #dedede;
+}
+form.aui div.description, form.aui legend, form.aui label {
+    color: #dedede !important;
+}
+a, a:hover, #footer .footer-body a, .commit-badge-oneline .commitid {
+    color: #dedede;
+}
+.bitbucket-theme .recent-repositories-menu.aui-dropdown2 ul.repository-list li a {
+    color: #dedede !important;
+}
+.bitbucket-theme .recent-repositories-menu.aui-dropdown2 ul.repository-list li a:hover {
+    color: white !important;
+}
+.repository-list-container .search-results-container .search-results-item a > .item-wrapper > .item-description {
+    color: #dedede !important;
+}
+.commit-badge-oneline .commitid {
+    font-weight: bold;
+}
+.dashboard-pull-requests-all-empty p, .dashboard-repositories .dashboard-recent-repo-empty .empty-action, .dashboard-repositories .dashboard-search-repo-empty .empty-action,
+ .dashboard-repositories .dashboard-search-repo-error .error-text .error-text-secondary {
+    color: #999999;
+}
+.aui-quicksearch .quick-search-trigger #quick-search {
+    background: #181A1B;
+    border-color: #999999;
+    color: #999999;
+}
+.aui-quicksearch .quick-search-trigger #quick-search::placeholder {
+    color: #999999;
+}
+.dashboard-repositories .dashboard-search-repo-error .error-text .error-text-primary {
+    color: #dedede;
+}
+.aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top, .aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top:hover li,
+.aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top, .aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top:hover li a,
+.aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top, .aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top:hover li a,
+ .bitbucket-theme .recent-repositories-menu.aui-dropdown2 ul.repository-list li a {
+    background: #1c1c1f !important;
+    color: #dedede;
+}
+aui-inline-dialog .aui-inline-dialog-contents, .aui-inline-dialog .aui-inline-dialog-contents, aui-inline-dialog .contents, .aui-inline-dialog .contents, .aui-message {
+    background: #1c1c1f;
+    color: #dedede;
+}
+.aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top, .aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top:hover li a:hover {
+    color: white;
+}
+form.aui.repository-search-form .search {
+    background: #1c1c1f;
+    color: white;
+    border-color: #1c1c1f;
+}
+body #footer-logo, body.aui-page-fixed #footer-logo, body.aui-page-hybrid #footer-logo {
+    background: #181A1B !important;
+}
+.aui-dropdown2.aui-style-default [role=checkbox], .aui-dropdown2.aui-style-default [role=menuitem], .aui-dropdown2.aui-style-default [role=menuitemcheckbox], .aui-dropdown2.aui-style-default [role=menuitemradio], .aui-dropdown2.aui-style-default [role=radio], .aui-dropdown2.aui-style-default a,
+ .aui-dropdown2.aui-style-default [role=checkbox], .aui-dropdown2.aui-style-default [role=menuitem], .aui-dropdown2.aui-style-default [role=menuitemcheckbox], .aui-dropdown2.aui-style-default [role=menuitemradio], .aui-dropdown2.aui-style-default [role=radio], .aui-dropdown2.aui-style-default a:hover {
+    color: #dedede;
+}
+#footer .footer-body {
+    color: #dedede;
+}
+#footer-logo a, #footer .footer-body {
+
+}
+.aui-page-panel {
+    border: none;
+}
+/* color for navigations table */
+.paged-table tr.focused td {
+    background: #1C1C21;
+}
+.paged-table tr.focused td:first-child {
+    border-left-color: black;
+}
+table.aui>tbody>tr, table.aui>tfoot>tr {
+    color: #dedede;
+}
+.aui-inline-dialog-contents .aui-button {
+    background: #5a5a60 !important;
+    color: white;
+}
+.aui-tabs.horizontal-tabs>.tabs-menu:after {
+    background: none;
+}
+.aui-button, .aui-button.aui-button-primary, .aui-button.aui-button-primary:visited, .aui-button, .aui-button:visited, a.aui-button, a.aui-button:focused, .aui-button, .aui-button:visited, a.aui-button {
+    background-color: #5a5a60 !important;
+    color: white;
+}
+.aui-button.aui-button-primary:hover, a.aui-button:hover, #avatar-picker-button:hover {
+    background-color: #73737a;
+    color: white;
+}
+.aui-button:hover, .aui-button-link:hover, .avatar-picker-cancel:hover,
+.aui-button.aui-button-link, .aui-button.aui-button-link:visited, .aui-button.aui-button-text, .aui-button.aui-button-text:visited {
+    color: white !important;
+}
+table.aui:not(.aui-table-list)>tbody>tr>td, table.aui:not(.aui-table-list)>tbody>tr>th, table.aui:not(.aui-table-list)>tfoot>tr>td, table.aui:not(.aui-table-list)>tfoot>tr>th {
+    border-bottom: solid 1px #1C1C21;
+}
+.bitbucket-theme #content table.aui > thead, .bitbucket-theme .aui-dialog2 table.aui > thead {
+    border-bottom: solid 2px #1C1C21;
+}
+.aui-dialog2-header {
+    border-bottom: 1px solid #151515;
+}
+.aui-dialog2-footer {
+    border-top: 1px solid #151515;
+}
+.image-explorer-container.empty .image-explorer-image-view {
+    border-color: #151515;
+}
+.aui-dialog2, .aui-dialog2-content {
+    background: #1c1c1f;
+}
+.bitbucket-theme kbd {
+    background-color: #1C1C21;
+}
+table.aui:not(.aui-table-list)>tbody>tr>td, table.aui:not(.aui-table-list)>tbody>tr>th, table.aui:not(.aui-table-list)>tfoot>tr>td, table.aui:not(.aui-table-list)>tfoot>tr>th {
+    border-bottom: none;
+}
+.branch-selector-toolbar .breadcrumbs {
+    border-left: none;
+}
+.filebrowser-table tr.focused-file .directory-file-history.message::after, .filebrowser-table tr:hover .directory-file-history.message::after, .commits-table-wrapper .commits-table .message::after, .commits-table-wrapper .commits-table tbody tr.focused .message::after {
+    background: none;
+}
+.bitbucket-theme #browse-table tr.focused-file td:first-of-type {
+    border-left-color: #1C1C21;
+}
+.bitbucket-theme #browse-table tr.focused-file {
+    background: #1C1C21;
+}
+.file-content > .file-toolbar {
+    border-bottom: 1px solid #181A1B;
+}
+.file-content, .file-toolbar, .CodeMirror {
+    background: #1C1C21;
+    border-color: #1C1C21;
+}
+.source-view.text-view .line .line-number, .source-view.text-view .line .CodeMirror-linenumber {
+    background: #1C1C21;
+    color: #dedede;
+}
+.commits-table .message .message-subject .commit-link {
+    color: white;
+}
+.commits-table tbody tr:hover .message::after, .commits-table tbody tr .message::after, .commits-table .message::after {
+    background: none;
+}
+.pointer-events .content-view .CodeMirror.CodeMirror-focused:after {
+    box-shadow: inset 0 0 8px #181A1B;
+}
+.text-view .line, .text-view .line .CodeMirror-gutter-elt > * {
+    background: #1C1C21;
+    color: #dedede;
+}
+.aui-tabs>.tabs-menu .menu-item a, .aui-tabs>.tabs-menu .menu-item a:link, .aui-tabs>.tabs-menu .menu-item a:visited {
+    color: #dedede;
+}
+.aui-tabs.horizontal-tabs>.tabs-menu>.menu-item.active-tab a:link, .aui-tabs.horizontal-tabs>.tabs-menu>.menu-item.active-tab a:visited {
+    color: #dedede;
+}
+.aui-tabs.horizontal-tabs>.tabs-menu>.menu-item.active-tab a strong {
+    font-weight: bold;
+}
+.aui-tabs.horizontal-tabs>.tabs-menu>.menu-item.active-tab a:after {
+    background: #dfe1e621;
+    height: 1px;
+}
+#commits-table tr.focused .message .tags-container::before, #commits-table tr:hover .message .tags-container::before, #commits-table .message .tags-container::before {
+    background: transparent;
+}
+.aui-tabs.horizontal-tabs>.tabs-menu>.menu-item.active-tab a, .aui-tabs.horizontal-tabs>.tabs-menu>.menu-item.active-tab a:link, .aui-tabs.horizontal-tabs>.tabs-menu>.menu-item.active-tab a:visite {
+    color: #dedede !important;
+}
+.CodeMirror-gutters > .blame {
+    background: #181A1B;
+}
+.ref-label, .ref-lozenge {
+    background: #181A1B;
+    color: #dedede;
+}
+.aui-button.aui-button-subtle {
+    background-color: #5a5a60;
+    color: white;
+}
+.markup-preview {
+    color: #181A1B;
+}
+.markup-editor .markup-toolbar {
+    background: #181A1B;
+    border: 1px solid #181A1B;
+    padding-top: 15px;
+}
+.blame {
+    border: none;
+}
+.CodeMirror-gutters > .blame {
+     border-color: #181A1B;
+}
+.comment-task, .file-header, .file-comment {
+    color: #dedede !important;
+    background-color: #1C1C21 !important;
+    border: 1px solid #1C1C21;
+}
+.file-comment .file-content.no-diff {
+    background-color: #1C1C21;
+}
+.activity-item-title {
+    color: #dedede;
+}
+.activity-item::before, .pull-request-activities .pull-request-new-comment-editor::before {
+    background: #1C1C21;
+}
+table.aui.dashboard-pull-requests-table tr.focused, table.aui.dashboard-pull-requests-table tr.focused:hover {
+    background-color: #181A1B !important;
+}
+.commits-table-wrapper .commits-table tbody tr.focused td:first-child, .commits-table-wrapper .commits-table tbody tr.focused td {
+    border-left: none;
+    background-color: #1C1C21;
+}
+table.aui.dashboard-pull-requests-table tr.focused .ref-label, table.aui.dashboard-pull-requests-table tr:hover .ref-label, table.aui.dashboard-pull-requests-table tr.focused .overflow-reviewers-trigger, table.aui.dashboard-pull-requests-table tr:hover .overflow-reviewers-trigger {
+    background-color: #1C1C21 !important;
+    color: #dedede;
+}
+table.aui.dashboard-pull-requests-table .meta {
+    color: #dedede;
+}
+table.aui.dashboard-pull-requests-table tr.focused td:first-child {
+    border-left: none;
+}
+.bitbucket-theme #content table.aui > thead, .bitbucket-theme .aui-dialog2 table.aui > thead {
+    border-bottom: none !important;
+}
+.file-comment .file-content.no-diff, .file-comment .file-content.no-diff .comments-thread {
+    background: #1C1C21;
+    border: none;
+}
+.editor {
+    border: solid 1px #dfe1e621 !important;
+}
+.editor .CodeMirror {
+    color: #dedede;
+}
+.diff-line-comments .editor .CodeMirror {
+    color: #181A1B;
+}
+.editor:focus-within, .editor:focus-within, .editor.restored-draft {
+    border-color: #dedede;
+}
+.commits-table-wrapper .commits-table .message .message-subject .commit-link, .comment-editor .editor-controls > button {
+    color: #dedede !important;
+}
+.change-header {
+    background: #1C1C21;
+    color: #dedede !important;
+}
+.aui-navgroup-horizontal:after {
+    background: none;
+}
+.aui-icon-small:before, .changes-tree .directory .directory-label, .branch-dest .arrow {
+    color: #dedede;
+}
+.pull-request-actions button span, .change-header .diff-meta h4, .blame-gutter .blame-gutter-content {
+    color: #dedede;
+}
+.blame-gutter, .blame-gutter:hover {
+    background: #1C1C21 !important;
+}
+.change-view {
+    border: none;
+}
+.diff-gutter.removed-line, .diff-line.removed-line {
+    background-color: rgba(221, 68, 68, 0.62);
+}
+.diff-gutter.added-line {
+
+}
+.diff-line.removed-line .ediff-delete, .diff-line.removed-line .ediff-change {
+    background-color: rgba(221, 68, 68, 0.6);
+}
+.diff-gutter .diff-line-number {
+    color: #dedede;
+}
+.diff-line {
+    color: #181A1B;
+}
+.aui-tabs.horizontal-tabs>.tabs-menu:after {
+    background: none;
+}
+.unified-diff .CodeMirror-scroll, .full-window-scrolling .skipped-container[data-below='false'] {
+    background: #1C1C21;
+}
+.changes-tree > section, .changes-search-results > section {
+    background: #1C1C21 !important;
+    color: #dedede;
+}
+.changes-search-results > section span, .changes-tree > section span {
+    color: black;
+}
+.diff-comments, .diff-comments a, .diff-line-comments a {
+    color: #181A1B;
+}
+.changes-tree .directory .directory-label:hover, .changes-tree .directory .directory-label:active, .changes-tree .directory .directory-label:focus {
+    background: #181A1B;
+}
+.file.file-selected a, .file.file-selected a:hover {
+    background: #181A1B;
+}
+div[role=dialog] {
+    background: #181A1B;
+}
+div[role=dialog] .merge-dialog-footer span {
+    color: #dedede;
+}
+div[role=dialog] .merge-dialog-footer div[role=menu] span {
+    color: #181A1B;
+}
+.dashboard .table-expander {
+    color: #dedede;
+}
+#dark-mode-invite-dialog {
+    width: 616px;
+    height: 471px;
+}
+.dark-mode-image {
+    width: 616px;
+    height: 471px;
+    border: solid 1px black;
+    background: url('images/promo.png');
+}

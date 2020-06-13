@@ -1,0 +1,45 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="bitbucket-dark-mode"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="bitbucket-dark-mode-resources" name="bitbucket-dark-mode Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="bitbucket-dark-mode.css" location="/css/bitbucket-dark-mode.css"/>
+        <resource type="download" name="bitbucket-dark-mode.js" location="/js/bitbucket-dark-mode.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>bitbucket-dark-mode</context>
+    </web-resource>
+
+    <!-- profile - управление включением/выключение темного режима  -->
+    <web-item key="profile-plugin-tab" name="Profile navigation tab" section="bitbucket.user.profile.secondary.tabs" weight="20">
+        <label>Dark mode</label>
+        <link>/plugins/servlet/dark-mode/profile</link>
+        <tooltip>Enable dark mode</tooltip>
+    </web-item>
+
+    <servlet name="Profile dark mode settings" key="profile-dark-mode-servlet" class="bean:darkModeProfilePage">
+        <description key="profile-servlet.description">Dark mode profile</description>
+        <url-pattern>/dark-mode/profile</url-pattern>
+    </servlet>
+    <!-- end profile - управление включением/выключение темного режима  -->
+
+    <web-resource key="dark-mode-css" name="dark mode for bitbucket">
+        <resource type="download" name="bitbucket-dark-mode.css" location="/css/bitbucket-dark-mode.css"/>
+        <resource type="download" name="bitbucket-dark-mode.js" location="/js/bitbucket-dark-mode.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>atl.general</context>
+    </web-resource>
+    
+</atlassian-plugin>
