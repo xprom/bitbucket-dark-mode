@@ -42,6 +42,7 @@
     <web-resource key="dark-mode-profile-static" name="dark-mode-profile Web Resources">
         <dependency>com.atlassian.auiplugin:aui-toggle</dependency>
         <resource type="download" name="bitbucket-dark-mode-profile.css" location="/css/bitbucket-dark-mode-profile.css"/>
+        <resource type="download" name="bitbucket-dark-mode-profiler.js" location="/js/bitbucket-dark-mode-profiler.js"/>
         <resource type="download" name="images/" location="/images"/>
 
         <context>dark-mode-profile-static</context>

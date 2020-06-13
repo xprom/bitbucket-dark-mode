@@ -3,6 +3,7 @@
 
 /**
  * @param currentUser ApplicationUser object which is in the context provided by ProfileServlet
+ * @param darkMode dark mode status
  */
 {template .profile}
     <html>
@@ -18,12 +19,14 @@
         <div class="dark-mode-promo">
         </div>
         <div class="dark-mode-toggle">
-            <aui-label for="enable-dark-mode">Enable</aui-label>&nbsp;&nbsp;&nbsp;
-            <aui-toggle id="enable-dark-mode" label="enable dark theme"></aui-toggle>
+            <form id="dark-mode-toggle-form" class="aui">
+                <aui-label for="enable-dark-mode">Enable</aui-label>&nbsp;&nbsp;&nbsp;
+                <aui-toggle id="enable-dark-mode" {if $darkMode == 'enabled'} checked {/if} name="dark-mode" label="enable dark theme"></aui-toggle>
+            </form>
         </div>
     </div>
 
-        {webResourceManager_requireResourcesForContext('dark-mode-profile-static')}
+    {webResourceManager_requireResourcesForContext('dark-mode-profile-static')}
     </body>
     </html>
 {/template}

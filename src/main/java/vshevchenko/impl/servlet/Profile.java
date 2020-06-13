@@ -34,9 +34,15 @@ public class Profile extends AbstractServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (this.authenticationContext.getCurrentUser() == null) {
+            resp.sendError(HttpServletResponse.SC_UNAUTHORIZED);
+            return;
+        }
+
         try {
             HashedMap data = new HashedMap();
             data.putAll(this.getContext(req));
+            data.put("darkMode", pluginSettingsFactory.createGlobalSettings().get("dark-mode-".concat(Integer.toString(this.authenticationContext.getCurrentUser().getId()))));
 
             render(resp, "plugin.darkmode.profile", data);
         } catch (Exception e) {
@@ -44,6 +50,32 @@ public class Profile extends AbstractServlet {
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
         }
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (this.authenticationContext.getCurrentUser() == null) {
+            resp.sendError(HttpServletResponse.SC_UNAUTHORIZED);
+            return;
+        }
+
+        try {
+            if (req.getParameter("dark-mode") != null && req.getParameter("dark-mode").equals("enabled")) {
+                pluginSettingsFactory.createGlobalSettings().put(getUserKey(), "enabled");
+            } else {
+                pluginSettingsFactory.createGlobalSettings().put(getUserKey(), "disabled");
+            }
+            resp.getWriter().write("{\"status\":\"success\"}");
+            return;
+        } catch (Exception e) {
+            LoggerFactory.getLogger(AbstractServlet.class).error(e.getMessage());
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+        }
+    }
+
+    protected String getUserKey() {
+        return String.join("", "dark-mode-", Integer.toString(this.authenticationContext.getCurrentUser().getId()));
+    }
+
 
     protected Map<String, Object> getContext(HttpServletRequest req) {
         Map<String, Object> data = Maps.newHashMap();
