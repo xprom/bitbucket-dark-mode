@@ -3,15 +3,11 @@ AJS.$(document).ready(function(){
     form.addEventListener('change', function(e) {
         var toggle = document.getElementById('enable-dark-mode');
         var isChecked = toggle.checked;     // new value of the toggle
-        if (isChecked === false) { // do not call server if unchecked
-            console.log("toggle is unchecked");
-            return;
-        }
 
         toggle.busy = true;
         $.post('?', { "dark-mode": isChecked ? "enabled" : "disabled" })
             .done(function () {
-                console.log('success');
+                location.reload();
             })
             .fail(function () {
                 toggle.checked = !isChecked;
