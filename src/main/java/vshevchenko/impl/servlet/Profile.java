@@ -39,11 +39,14 @@ public class Profile extends AbstractServlet {
             return;
         }
 
-        try {
-            HashedMap data = new HashedMap();
-            data.putAll(this.getContext(req));
-            data.put("darkMode", pluginSettingsFactory.createGlobalSettings().get("dark-mode-".concat(Integer.toString(this.authenticationContext.getCurrentUser().getId()))));
+        HashedMap data = new HashedMap();
+        data.putAll(this.getContext(req));
 
+        try {
+            data.put("darkMode", pluginSettingsFactory.createGlobalSettings().get("dark-mode-".concat(Integer.toString(this.authenticationContext.getCurrentUser().getId()))));
+            render(resp, "plugin.darkmode.profile", data);
+        } catch (IllegalArgumentException e) {
+            data.put("darkMode", "disabled");
             render(resp, "plugin.darkmode.profile", data);
         } catch (Exception e) {
             LoggerFactory.getLogger(AbstractServlet.class).error(e.getMessage());

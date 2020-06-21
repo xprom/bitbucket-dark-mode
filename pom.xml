@@ -11,8 +11,8 @@
     <description>This is the vshevchenko:bitbucket-dark-mode plugin for Atlassian Bitbucket Server.</description>
 
     <organization>
-        <name>Example Company</name>
-        <url>http://www.example.com/</url>
+        <name>vshevchenko</name>
+        <url>mailto://valeriyasheffchenko@gmail.com</url>
     </organization>
 
     <properties>
@@ -158,6 +158,7 @@
                         <!-- Ensure plugin is Spring powered -->
                         <Spring-Context>*</Spring-Context>
                     </instructions>
+                    <enableQuickReload>true</enableQuickReload>
                 </configuration>
             </plugin>
             <plugin>
