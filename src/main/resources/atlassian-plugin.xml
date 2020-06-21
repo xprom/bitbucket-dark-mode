@@ -55,16 +55,16 @@
         <resource type="download" name="bitbucket-dark-mode.css" location="/css/bitbucket-dark-mode.css"/>
         <resource type="download" name="images/" location="/images"/>
         <context>atl.general</context>
+
+        <condition class="vshevchenko.impl.ConditionDarkModeEnabled"/>
     </web-resource>
     <!--  main styles for dark mode  -->
 
     <web-resource key="dark-mode-banner-css" name="dark mode promo banner for bitbucket">
-        <resource type="download" name="bitbucket-dark-mode.css" location="/css/bitbucket-dark-mode.css"/>
+        <resource type="download" name="bitbucket-dark-mode.css" location="/css/bitbucket-dark-mode-banner.css"/>
         <resource type="download" name="bitbucket-dark-mode.js" location="/js/bitbucket-dark-mode-banner.js"/>
         <resource type="download" name="images/" location="/images"/>
-
         <context>bitbucket.page.dashboard</context>
-<!--        <condition class="vshevchenko.impl.ConditionDarkModeEnabled"/>-->
     </web-resource>
     
 </atlassian-plugin>

@@ -1,6 +1,17 @@
+.dark-mode-themes-list {
+    border-radius: 5px;
+    margin: 20px 0;
+    color: #dedede;
+    background: #181A1B;
+    padding: 40px;
+}
+.dark-mode-themes-list h3 {
+    color: #dedede;
+    font-size:24px;
+}
 .dark-mode-theme {
     width: 250px;
-    border: solid 1px black;
+    border: solid 1px #ffffff2e;
     border-radius: 4px;
     -webkit-box-shadow: inset 0px 0px 21px 1px rgba(0,0,0,0.69);
     -moz-box-shadow: inset 0px 0px 21px 1px rgba(0,0,0,0.69);
@@ -10,12 +21,14 @@
 }
     .dark-mode-theme .dark-mode-promo {
         width: 250px;
-        height: 350px;
-        background-position: -205px -97px;
+        height: 250px;
+        background-position: -209px -175px;
         background-image: url('images/promo.png');
+        border-radius: 5px;
     }
     .dark-mode-theme .dark-mode-toggle {
         height: 45px;
+        color: #dedede;
         margin-top: -45px;
         text-align: center;
         font-weight: bold;

@@ -396,30 +396,6 @@ div[role=dialog] .merge-dialog-footer div[role=menu] span {
 .dashboard .table-expander {
     color: #dedede;
 }
-#dark-mode-invite-dialog {
-    width: 616px;
-    height: 471px;
-}
-.dark-mode-image {
-    width: 616px;
-    height: 471px;
-    border: solid 1px black;
-    background: url('images/promo.png');
-}
-    .dark-mode-image a {
-        color: #dedede;
-        font-weight: bold;
-        padding-bottom: 3px;
-        text-decoration: none;
-        border-bottom: solid 1px #dedede;
-    }
-    .dark-mode-image div {
-        margin-top: 426px;
-        margin-left: 351px;
-    }
-    .dark-mode-image a:hover {
-        border-bottom: solid 1px black;
-    }
 .aui-button, .aui-button:visited, a.aui-button {
     color: #dedede !important;
 }
