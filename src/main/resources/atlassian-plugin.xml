@@ -64,6 +64,7 @@
         <resource type="download" name="images/" location="/images"/>
 
         <context>bitbucket.page.dashboard</context>
+<!--        <condition class="vshevchenko.impl.ConditionDarkModeEnabled"/>-->
     </web-resource>
     
 </atlassian-plugin>

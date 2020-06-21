@@ -16,4 +16,9 @@
         <constructor-arg index="1" ref="authenticationContext"/>
         <constructor-arg index="2" ref="pluginSettingsFactory"/>
     </bean>
+
+<!--    <bean id="darkModeIsEnabled" name="darkModeIsEnabled" class="vshevchenko.impl.ConditionDarkModeEnabled">-->
+<!--        <constructor-arg index="0" ref="authenticationContext"/>-->
+<!--        <constructor-arg index="1" ref="pluginSettingsFactory"/>-->
+<!--    </bean>-->
 </beans>

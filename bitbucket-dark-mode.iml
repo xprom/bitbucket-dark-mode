@@ -31,7 +31,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.bitbucket.server:bitbucket-spi:5.16.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-core:4.5.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-api:4.5.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.util.concurrent:atlassian-util-concurrent:3.0.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: dom4j:dom4j:1.6.1" level="project" />
@@ -39,6 +38,15 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.profiling:atlassian-profiling:2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugin:atlassian-spring-scanner-annotation:2.1.7" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.sal:sal-api:3.2.0-abbce37" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-webresource:3.5.39" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-webresource-spi:3.5.39" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-webfragment:4.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-webfragment-api:4.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.plugins:atlassian-plugins-webresource-api:3.5.39" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.tuckey:urlrewritefilter:4.0.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.util.concurrent:atlassian-util-concurrent:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.atlassian.sourcemap:sourcemap:1.7.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
