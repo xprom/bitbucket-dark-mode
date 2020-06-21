@@ -65,6 +65,8 @@
         <resource type="download" name="bitbucket-dark-mode.js" location="/js/bitbucket-dark-mode-banner.js"/>
         <resource type="download" name="images/" location="/images"/>
         <context>bitbucket.page.dashboard</context>
+
+        <condition class="vshevchenko.impl.ConditionDarkModeBanner"/>
     </web-resource>
     
 </atlassian-plugin>

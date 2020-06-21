@@ -3,6 +3,7 @@
     height: 471px;
     border: solid 1px black;
     background: url('images/promo.png');
+    position: relative;
 }
     .dark-mode-image a {
         color: #dedede;
@@ -22,3 +23,12 @@
     width: 616px;
     height: 471px;
 }
+    .dark-mode-image .hide-intro {
+        position: absolute;
+        left: 25px;
+        top: 426px;
+        margin: 0;
+    }
+        .hide-intro a {
+            color: #dedede;
+        }
