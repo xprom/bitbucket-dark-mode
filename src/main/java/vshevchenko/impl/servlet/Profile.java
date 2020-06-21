@@ -62,6 +62,17 @@ public class Profile extends AbstractServlet {
         }
 
         try {
+            if (req.getParameter("hide-banner") != null) {
+                pluginSettingsFactory.createGlobalSettings().put(getUserKeyBanner(), req.getParameter("hide-banner"));
+                resp.getWriter().write("{\"status\":\"success\"}");
+                return;
+            }
+        } catch (Exception e) {
+            LoggerFactory.getLogger(AbstractServlet.class).error(e.getMessage());
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+        }
+
+        try {
             if (req.getParameter("dark-mode") != null && req.getParameter("dark-mode").equals("enabled")) {
                 pluginSettingsFactory.createGlobalSettings().put(getUserKey(), "enabled");
             } else {
@@ -73,6 +84,10 @@ public class Profile extends AbstractServlet {
             LoggerFactory.getLogger(AbstractServlet.class).error(e.getMessage());
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
         }
+    }
+
+    protected String getUserKeyBanner() {
+        return String.join("", "dark-mode-banner-", Integer.toString(this.authenticationContext.getCurrentUser().getId()));
     }
 
     protected String getUserKey() {

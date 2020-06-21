@@ -46,19 +46,18 @@ public class ConditionDarkModeBanner implements Condition {
             return false;
         }
 
-
         try {
             PluginSettings plaginSettings = pluginSettingsFactory.createGlobalSettings();
             String enabled = (String) plaginSettings.get(getUserKey(principal));
             if (enabled == null) {
-                return true;
+                return isFirstOpenig(principal);
             }
 
             if (enabled.equals("enabled")) {
                 return false;
             }
 
-            return true;
+            return isFirstOpenig(principal);
         } catch (IllegalArgumentException e) {
             return false;
         }
@@ -66,34 +65,16 @@ public class ConditionDarkModeBanner implements Condition {
 
     // если это первое открытие - то показываем банне
     private boolean isFirstOpenig(ApplicationUser principal) {
-        // время через которое можно повторно показать баннер
-        long timeInterval = 30;
-        Logger log = LoggerFactory.getLogger(ConditionDarkModeBanner.class);
-        log.error("test");
-        Date now = new Date();
-
         PluginSettings plaginSettings = pluginSettingsFactory.createGlobalSettings();
         String enabled = (String) plaginSettings.get(getUserKeyFirstSee(principal));
-
-
         if (enabled == null) {
-            log.error("test1");
-            plaginSettings.put(getUserKeyFirstSee(principal), Long.toString(now.getTime()));
             return true;
         }
 
-        try {
-            long lastShowTime = Long.parseLong(enabled);
-            if (lastShowTime + timeInterval > now.getTime()) {
-                log.error("test2");
-                return false;
-            }
-        } catch (NumberFormatException e) {
-
+        if (enabled.equals("2")) {
+            return false;
         }
 
-        log.error("test3");
-        plaginSettings.put(getUserKeyFirstSee(principal), Long.toString(now.getTime()));
         return true;
     }
 

@@ -5,19 +5,12 @@ AJS.$(document).ready(function(){
         '</section>');
     AJS.$('.hide-intro a').click(function() {
         AJS.dialog2("#dark-mode-invite-dialog").hide();
-        $.post('?', { "dark-mode": isChecked ? "enabled" : "disabled" })
-                    .done(function () {
-                        location.reload();
-                    })
-                    .fail(function () {
-                        toggle.checked = !isChecked;
-                        console.error('display an error message');
-                    })
-                    .always(function () {
-                        toggle.busy = false;
-                    });
         return false;
     })
 
     AJS.dialog2("#dark-mode-invite-dialog").show();
+
+    AJS.dialog2("#dark-mode-invite-dialog").on("hide", function() {
+        $.post('plugins/servlet/dark-mode/profile', { "hide-banner": 2 });
+    });
 })
