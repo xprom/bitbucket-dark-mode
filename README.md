@@ -1,6 +1,8 @@
 Atlassian bitbucket plugin to enable dark mode.
 Feel free to add new themes or improve color scheme.
 
+![Bitbucket-dark-mode](promo/promo1-min.gif)
+
 --
 
     make run // build addon
