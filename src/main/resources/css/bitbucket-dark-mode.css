@@ -130,7 +130,8 @@ body #footer-logo, body.aui-page-fixed #footer-logo, body.aui-page-hybrid #foote
     background: #181A1B !important;
 }
 .aui-dropdown2.aui-style-default [role=checkbox], .aui-dropdown2.aui-style-default [role=menuitem], .aui-dropdown2.aui-style-default [role=menuitemcheckbox], .aui-dropdown2.aui-style-default [role=menuitemradio], .aui-dropdown2.aui-style-default [role=radio], .aui-dropdown2.aui-style-default a,
- .aui-dropdown2.aui-style-default [role=checkbox], .aui-dropdown2.aui-style-default [role=menuitem], .aui-dropdown2.aui-style-default [role=menuitemcheckbox], .aui-dropdown2.aui-style-default [role=menuitemradio], .aui-dropdown2.aui-style-default [role=radio], .aui-dropdown2.aui-style-default a:hover {
+ .aui-dropdown2.aui-style-default [role=checkbox], .aui-dropdown2.aui-style-default [role=menuitem], .aui-dropdown2.aui-style-default [role=menuitemcheckbox], .aui-dropdown2.aui-style-default [role=menuitemradio], .aui-dropdown2.aui-style-default [role=radio], .aui-dropdown2.aui-style-default a:hover,
+  .aui-dropdown2.aui-style-default:hover .aui-dropdown2-checkbox, .aui-dropdown2.aui-style-default:hover .aui-dropdown2-radio, .aui-dropdown2.aui-style-default:hover a {
     color: #dedede;
 }
 #footer .footer-body {
@@ -398,4 +399,10 @@ div[role=dialog] .merge-dialog-footer div[role=menu] span {
 }
 .aui-button, .aui-button:visited, a.aui-button {
     color: #dedede !important;
+}
+.aui-dropdown2.aui-style-default {
+    background: #212121;
+}
+.aui-dropdown2.aui-style-default .aui-dropdown2-section+.aui-dropdown2-section {
+    border-top: 1px solid #212121;
 }
